@@ -1,7 +1,7 @@
-#soundslike-server
+# soundslike-server
 API server for soundslike written in flask
 
-##Setup
+## Setup
 You'll need python 3, pip, postgresql, and [virtualenvwrapper](http://virtualenvwrapper.readthedocs.io/en/latest/index.html)
 
 1. Create a database user and a test database (named something like `soundslike-test`)
@@ -20,4 +20,20 @@ and the following line to `$WORKON_HOME/soundslike/bin/postactivate`
 5. Optional: Install [autoenv](https://github.com/kennethreitz/autoenv) on your box to get localized env variables and stuff
 
 
+## Database Tables
+
+### Song
+- id
+- title
+- artist
+- url
+- user_id
+- created
+    
+### User
+- id
+- username
+- email
+- member_since
+- songs_created
 
